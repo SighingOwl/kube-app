@@ -20,7 +20,7 @@ spec:
           ports:
             - name: vpromq01-port
               containerPort: 15672
-          evn:
+          env:
             - name: RABBITMQ_DEFAULT_USER
               valueFrom:
                 secretKeyRef:
@@ -28,4 +28,4 @@ spec:
                   key: rmq-pass
             - name: RABBITMQ_DEFAULT_USER
               value: "guest"
-              
+
