@@ -10,7 +10,7 @@ spec:
         app: vpromq01
   replicas: 1
   template:
-    metedata:
+    metadata:
       labels:
         app: vpromq01
     spec:
